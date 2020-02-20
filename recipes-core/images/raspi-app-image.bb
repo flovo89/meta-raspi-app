@@ -9,9 +9,7 @@ require recipes-core/images/core-image-base-network-setup.bb
 
 IMAGE_INSTALL += " \
     htop \
-    apt \
+    python3 \
+    python3-cython \
+    python3-pip \
     "
-
-EXTRA_IMAGE_FEATURES += " \
-    package-management \
-    " 
