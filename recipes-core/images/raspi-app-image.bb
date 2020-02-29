@@ -10,6 +10,5 @@ require recipes-core/images/core-image-base-network-setup.bb
 IMAGE_INSTALL += " \
     htop \
     python3 \
-    python3-cython \
     python3-pip \
     "
