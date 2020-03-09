@@ -12,5 +12,5 @@ IMAGE_INSTALL += " \
     python3 \
     python3-cython \
     python3-pip \
-    tensorflow \
+    tensorflow-lite \
     "
