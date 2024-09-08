@@ -2,7 +2,7 @@
 MACHINE ??= "raspberrypi"
 
 # Distribution selection
-DISTRO ?= "poky"
+DISTRO ?= ""
 
 # Packages manager
 PACKAGE_CLASSES ?= "package_ipk"
