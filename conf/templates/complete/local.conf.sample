@@ -48,7 +48,7 @@ HOSTTOOLS += "ssh"
 CONF_VERSION = "1"
 
 # Remove host contamination warning
-#WARN_QA_remove = "host-user-contaminated"
+#WARN_QA:remove = "host-user-contaminated"
 
 # config to generate a source tarballs
 # BB_GENERATE_MIRROR_TARBALLS = "1"
