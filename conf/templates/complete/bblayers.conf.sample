@@ -4,14 +4,14 @@ BBPATH = "${TOPDIR}"
 BBFILES ?= ""
 
 BBLAYERS ?= " \
-  ##OEROOT##/sources/poky/meta \
-  ##OEROOT##/sources/meta-openembedded/meta-oe/ \
-  ##OEROOT##/sources/meta-openembedded/meta-multimedia \
-  ##OEROOT##/sources/meta-openembedded/meta-networking \
-  ##OEROOT##/sources/meta-openembedded/meta-python \
-  ##OEROOT##/sources/meta-raspberrypi \
-  ##OEROOT##/sources/meta-raspi-network-setup \
-  ##OEROOT##/sources/meta-swupdate \
-  ##OEROOT##/sources/meta-swupdate-boards \
-  ##OEROOT##/sources/meta-raspi-app \
+  ##OEROOT##/poky/meta \
+  ##OEROOT##/../meta-openembedded/meta-oe/ \
+  ##OEROOT##/../meta-openembedded/meta-multimedia \
+  ##OEROOT##/../meta-openembedded/meta-networking \
+  ##OEROOT##/../meta-openembedded/meta-python \
+  ##OEROOT##/../meta-raspberrypi \
+  ##OEROOT##/../meta-raspi-network-setup \
+  ##OEROOT##/../meta-swupdate \
+  ##OEROOT##/../meta-swupdate-boards \
+  ##OEROOT##/../meta-raspi-app \
   "
