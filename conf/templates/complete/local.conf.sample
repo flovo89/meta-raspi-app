@@ -2,13 +2,12 @@
 MACHINE ??= "raspberrypi"
 
 # Distribution selection
-DISTRO ?= ""
+DISTRO ?= "poky"
 
 # Packages manager
 PACKAGE_CLASSES ?= "package_ipk"
 
 # Cross SDK architecture
-#SDKMACHINE ?= "i686"
 SDKMACHINE ?= "x86_64"
 
 # Disk space monitoring
@@ -21,6 +20,9 @@ BB_DISKMON_DIRS = "\
     ABORT,${DL_DIR},100M,1K \
     ABORT,${SSTATE_DIR},100M,1K \
     ABORT,/tmp,10M,1K"
+
+# By default disable interactive patch resolution (tasks will just fail instead):
+PATCHRESOLVE = "noop"
 
 # Free some space after build
 INHERIT += "rm_work"
@@ -49,4 +51,6 @@ CONF_VERSION = "1"
 #WARN_QA_remove = "host-user-contaminated"
 
 # config to generate a source tarballs
-BB_GENERATE_MIRROR_TARBALLS = "1"
+# BB_GENERATE_MIRROR_TARBALLS = "1"
+
+CONF_VERSION = "2"
