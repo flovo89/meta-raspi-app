@@ -53,7 +53,7 @@ CONF_VERSION = "1"
 # config to generate a source tarballs
 # BB_GENERATE_MIRROR_TARBALLS = "1"
 
-# Allow all licenses
-LICENSE_FLAGS_ACCEPTED = "*"
+# Allow this license
+LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"
 
 CONF_VERSION = "2"
