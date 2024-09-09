@@ -56,4 +56,7 @@ CONF_VERSION = "1"
 # Allow this license
 LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"
 
+# Use u-boot for raspi
+RPI_USE_U_BOOT = "1"
+
 CONF_VERSION = "2"
