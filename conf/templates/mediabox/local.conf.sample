@@ -2,7 +2,7 @@
 MACHINE ??= "raspberrypi"
 
 # Distribution selection
-DISTRO ?= ""
+DISTRO ?= "mediabox"
 
 # Packages manager
 PACKAGE_CLASSES ?= "package_ipk"
