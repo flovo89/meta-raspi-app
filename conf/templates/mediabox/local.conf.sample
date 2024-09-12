@@ -58,5 +58,6 @@ LICENSE_FLAGS_ACCEPTED = "synaptics-killswitch"
 
 # Use u-boot for raspi
 RPI_USE_U_BOOT = "1"
+ENABLE_UART = "1"
 
 CONF_VERSION = "2"

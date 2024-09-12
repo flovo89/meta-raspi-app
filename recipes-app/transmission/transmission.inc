@@ -16,6 +16,8 @@ SRC_URI = "\
 
 S = "${WORKDIR}/git"
 
+inherit cmake
+
 EXTRA_OECMAKE += " \
   -DCMAKE_BUILD_TYPE=Release \
   "
