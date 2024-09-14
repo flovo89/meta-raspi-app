@@ -10,7 +10,6 @@ BBLAYERS ?= " \
   ##OEROOT##/../meta-openembedded/meta-networking \
   ##OEROOT##/../meta-openembedded/meta-python \
   ##OEROOT##/../meta-raspberrypi \
-  ##OEROOT##/../meta-raspi-network-setup \
   ##OEROOT##/../meta-swupdate \
   ##OEROOT##/../meta-swupdate-boards \
   ##OEROOT##/../meta-raspi-app \
