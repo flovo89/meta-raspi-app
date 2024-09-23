@@ -7,5 +7,10 @@ IMAGE_INSTALL:append = " \
     bridge-utils \
     hostapd \
     iptables \
+    htop \
     wpa-supplicant \
+    "
+
+IMAGE_FEATURES:append = " \
+    debug-tweaks \
     "
