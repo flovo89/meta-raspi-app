@@ -5,31 +5,13 @@ HOMEPAGE = "https://github.com/flovo89"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://${GPLv2_LICENSE_PATH};md5=${GPLv2_LICENSE_CHECKSUM}"
 
+require app-image.bb
+
 IMAGE_FSTYPES += " wic"
 WKS_FILE = "wic/sd-image.wks"
 
-IMAGE_INSTALL:append = " \
-    transmission \
-    plex-media-server \
-    network-configuration \
-    bluez5 \
-    bridge-utils \
-    hostapd \
-    iptables \
-    htop \
-    wpa-supplicant \
-    swupdate \
-    swupdate-www \
-    swupdate-tools \
-    u-boot-fw-utils \
-    lua \
-    parted \
-    util-linux \
-    python3 \
-"
-
-IMAGE_FEATURES:append = " \
-    debug-tweaks \
+do_rootfs[depends] += " \
+    app-image:do_install \
 "
 
 inherit core-image
