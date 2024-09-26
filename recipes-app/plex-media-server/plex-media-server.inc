@@ -1,8 +1,8 @@
 SUMMARY = "Plex Media Server"
 DESCRIPTION = "Plex Media Server organizes video, music, and photos from personal media libraries and streams them to smart TVs, streaming boxes, and mobile devices."
 AUTHOR = "Florian Vogel <flovo89@hotmail.com>"
-LICENSE = "GPLv2"
-LIC_FILES_CHKSUM = "file://${GPLv2_LICENSE_PATH};md5=${GPLv2_LICENSE_CHECKSUM}"
+LICENSE = "MIT"
+LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
 inherit systemd
 

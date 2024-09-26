@@ -2,8 +2,8 @@ SUMMARY = "SD Image"
 DESCRIPTION = "SD Image build"
 AUTHOR = "Florian Vogel <flovo89@hotmail.com>"
 HOMEPAGE = "https://github.com/flovo89"
-LICENSE = "GPLv2"
-LIC_FILES_CHKSUM = "file://${GPLv2_LICENSE_PATH};md5=${GPLv2_LICENSE_CHECKSUM}"
+LICENSE = "MIT"
+LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
 require app-image.bb
 
@@ -11,7 +11,5 @@ IMAGE_FSTYPES += " wic"
 WKS_FILE = "wic/sd-image.wks"
 
 do_rootfs[depends] += " \
-    app-image:do_install \
+    app-image:do_rootfs \
 "
-
-inherit core-image
