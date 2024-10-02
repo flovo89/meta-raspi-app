@@ -11,6 +11,5 @@ BBLAYERS ?= " \
   ##OEROOT##/../meta-openembedded/meta-python \
   ##OEROOT##/../meta-raspberrypi \
   ##OEROOT##/../meta-swupdate \
-  ##OEROOT##/../meta-swupdate-boards \
   ##OEROOT##/../meta-raspi-app \
   "
