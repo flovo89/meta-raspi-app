@@ -20,6 +20,7 @@ IMAGE_INSTALL:append = " \
     util-linux \
     python3 \
     glibc-utils \
+    dropbear \
 "
 
 IMAGE_FEATURES:append = " \
