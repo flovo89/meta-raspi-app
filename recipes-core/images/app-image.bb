@@ -19,6 +19,7 @@ IMAGE_INSTALL:append = " \
     parted \
     util-linux \
     python3 \
+    glibc-utils \
 "
 
 IMAGE_FEATURES:append = " \
