@@ -37,7 +37,7 @@ do_install() {
     tar -xvf ${S}/data.tar.xz -C ${D}
 
     # Patch service file
-    sed -i 's#/var/lib/#/tmp/#g' ${D}/${libdir}/plexmediaserver/lib/plexmediaserver.service
+    sed -i 's#/var/lib/#/media/ssd/plex/#g' ${D}/${libdir}/plexmediaserver/lib/plexmediaserver.service
 
     # Adjust permissions for necessary directories
     #chmod -R 755 ${D}/opt/plexmediaserver
