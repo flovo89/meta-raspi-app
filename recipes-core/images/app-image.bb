@@ -8,7 +8,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 IMAGE_FSTYPES += "ext4.gz"
 
 IMAGE_INSTALL:append = " \
-    transmission \
+    transmission-web \
     plex-media-server \
     htop \
     swupdate \
@@ -21,6 +21,8 @@ IMAGE_INSTALL:append = " \
     python3 \
     glibc-utils \
     dropbear \
+    bridge-utils \
+    openvpn \
 "
 
 IMAGE_FEATURES:append = " \
