@@ -23,6 +23,7 @@ IMAGE_INSTALL:append = " \
     dropbear \
     bridge-utils \
     openvpn \
+    node-red \
 "
 
 IMAGE_FEATURES:append = " \
