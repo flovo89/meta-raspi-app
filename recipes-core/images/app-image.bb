@@ -24,6 +24,8 @@ IMAGE_INSTALL:append = " \
     bridge-utils \
     openvpn \
     node-red \
+    network-configuration \
+    brew-control \
 "
 
 IMAGE_FEATURES:append = " \

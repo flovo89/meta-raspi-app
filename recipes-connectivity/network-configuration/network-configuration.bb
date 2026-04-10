@@ -10,7 +10,12 @@ BBCLASSEXTEND = "nativesdk"
 SRC_URI = "\
     file://wpa_supplicant.conf \
     file://interfaces \
+    file://wlan0-up.service \
     "
+
+inherit systemd
+
+SYSTEMD_SERVICE:${PN} = "wlan0-up.service"
 
 do_configure() {
     if [ -n "${INTERFACES_CONTENT}" ]; then
@@ -39,4 +44,7 @@ do_install() {
 
     install -d ${D}/${sysconfdir}/network
     install -m 0755 ${WORKDIR}/interfaces ${D}/${sysconfdir}/network/
+
+    install -d ${D}${systemd_system_unitdir}
+    install -m 644 ${WORKDIR}/wlan0-up.service ${D}${systemd_system_unitdir}/
 }
